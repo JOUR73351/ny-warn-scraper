@@ -41,7 +41,7 @@ What is the maximum (best) story possible? What's the minimum (fallback) story i
    rm -rf .git
    ```
 
-3) Create a new repository on GitHub called `NAME-OF-YOUR-PROJECT-HERE` with the following settings.
+3) Create a new repository on GitHub called `ny-warn-scraper` with the following settings.
    <br>
    <img src="assets/newrepo.png" width="500">
 
@@ -61,7 +61,7 @@ What is the maximum (best) story possible? What's the minimum (fallback) story i
 
 7) Scrape the [WARN notices](https://labor.ny.gov/app/warn) from the NY Department of Labor website and output to `data/warn.csv`. Your scraper code will live in `notebooks/scrape.ipynb`.
 
-   Extra credit if you can figure out how to scrape previous years as well. Here's a clue:
+   Extra credit if you can scrape previous years' notices as well. Here's a clue:
 
    ```
    https://labor.ny.gov/app/warn/default.asp?warnYr=2019
@@ -72,15 +72,13 @@ What is the maximum (best) story possible? What's the minimum (fallback) story i
 
    Can you do this in a loop?
 
-8. Analyze the data you've scraped with `notebooks/analyze.ipynb`. You will probably need to do a bit of data cleaning in pandas and convert some columns to integers.
+8. Come up with some questions about the data and try to answer them with pandas functions. Analyze the data you've scraped in `notebooks/analyze.ipynb`. You will probably need to do a bit of data cleaning in pandas and convert some columns to integers. Export the data you are visualizing in a chart in the `output` folder.
 
-Come up with some questions about the data and try to answer them with pandas functions.
-
-9. Write your story in and add your assets and charts to `index.html`. Feel free to play around with and change the styles in `style.css`, but you are not required to. Delete the code that you don't need for your story. The story itself should be no less than 150 words and include at least one chart from Datawrapper. You can embed a Datawrapper chart in your story by copying the embed code into your html as I have done in `index.html.`
+9) Write your story in and add your assets and charts to `index.html`. Feel free to play around with and change the styles in `style.css`, but you are not required to. Delete the code that you don't need for your story. The story itself should be no less than 150 words and include at least one chart from Datawrapper. You can embed a Datawrapper chart in your story by copying the embed code into your html as I have done in `index.html.`
    <br>
    <img src="assets/datawrapper.png" width="500">
 
-10. You can preview a local version of your story by running a python server.
+10) You can preview a local version of your story by running a python server.
 
 ```
 python -m SimpleHTTPServer 8000
