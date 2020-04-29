@@ -1,0 +1,14 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+bs4 = "*"
+pandas = "*"
+requests = "*"
+jupyterlab = "*"
+
+[requires]
+python_version = "3.7"
+
